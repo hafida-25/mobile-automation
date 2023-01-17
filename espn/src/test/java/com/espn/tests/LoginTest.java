@@ -17,9 +17,10 @@ public class LoginTest extends TestBase {
     }
     @Test
     public void validateUserCanLoginWithValidateCredentials(){
-       loginPage.clickOnLoginBtn();
-       // homePage.typeOnUserNameField("elhadjenhafi@gmail.com");
-       // homePage.typeOnPassword("abc12$");
-       // homePage.clickOnLoginButton();
+
+        loginPage.clickOnLoginBtn();
+        homePage.typeOnUserNameField("elhadjenhafi@gmail.com");
+        homePage.typeOnPassword("abc12$");
+        homePage.clickOnLoginButton();
     }
 }

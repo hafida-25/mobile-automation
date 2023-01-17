@@ -6,8 +6,11 @@
     <parameter name="platform" value="android"/>
     <parameter name="deviceName" value="R3CT70GVBYX"/>
     <parameter name="platformVersion" value="12"/>
-    <parameter name="appActivity" value="com.tdbank"/>
-    <parameter name="appPackage" value="com.td.dcts.android.us.app.SplashScreenActivity"/>
+
+    <parameter name="APP" value="C:\Users\hafida\Downloads\TD.apk"/>
+
+    <parameter name="UiAutomator1" value="appium"/>
+
 
 
     <test name="Automation tests">

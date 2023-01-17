@@ -6,7 +6,7 @@ import org.testng.Assert;
 
 public class HomePage {
 
-    @FindBy(xpath="//android.widget.EditText[@resource-id='InputLoginValue']")
+    @FindBy(xpath="//android.widget.EditText[@resource-id='InputIdentityFlowValue']")
     private WebElement userNameField;
 
     public void validateUserNameField(){
@@ -18,7 +18,7 @@ public class HomePage {
         userNameField.sendKeys(data);
 
     }
-    @FindBy(xpath="//android.widget.EditText[@resource-id='InputPassword']")
+    @FindBy(xpath="//android.widget.EditText[@resource-id='password-new']")
     private WebElement passwordField;
     public void typeOnPassword(String data){
         userNameField.sendKeys(data);

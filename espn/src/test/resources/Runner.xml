@@ -4,12 +4,14 @@
 <suite name="Selenium Test Suite" parallel="false">
 
     <parameter name="platform" value="android"/>
-    <parameter name="deviceName" value="R3CT70GVBYX"/>
-    <parameter name="platformVersion" value="12"/>
-<parameter name="appActivity" value="com.espn.score_center "/>
-    <parameter name="appPackage" value=" com.espn.sportscenter.ui.EspnLaunchActivity "/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <parameter name="platformVersion" value="11"/>
 
-    <parameter name="UiAutomator1" value="UiAutomator1"/>
+
+
+   <parameter name="APP" value="C:\Users\hafida\Downloads\ESPN_6.79.1_Apkpure.apk"/>
+
+   <parameter name="UiAutomator1" value="appium"/>
 
 
 

@@ -40,19 +40,19 @@ public class TestBase {
      * @param platformVersion
      * @throws MalformedURLException
      */
-    @Parameters({"platform", "deviceName", "platformVersion","appPackage","appActivity","UiAutomator1"})
+    @Parameters({"platform", "deviceName", "platformVersion","UiAutomator1","APP"})
     @BeforeMethod
-    public static void getAppiumDriver(String platform, String deviceName, String platformVersion,String appPackage,String appActivity,String UiAutomator1 ) throws MalformedURLException {
+    public static void getAppiumDriver(String platform, String deviceName, String platformVersion,String UiAutomator1 , String app) throws MalformedURLException {
 
         DesiredCapabilities cap = new DesiredCapabilities();
         if (platform.equalsIgnoreCase("android")) {
             cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
             cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
             cap.setCapability(MobileCapabilityType.PLATFORM_VERSION,platformVersion);
-            cap.setCapability(MobileCapabilityType.APP_PACKAGE, appPackage);
-           cap.setCapability(MobileCapabilityType.APP_ACTIVITY,appActivity);
-
-            cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,UiAutomator1);
+            //cap.setCapability(MobileCapabilityType.APP_PACKAGE, appPackage);
+           // cap.setCapability(MobileCapabilityType.APP_ACTIVITY,appActivity);
+            cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"appium");
+            cap.setCapability(MobileCapabilityType.APP,app);
             driver = new AndroidDriver(new URL(" http://localhost:4723/wd/hub"), cap);
 
         } else {
